@@ -52,7 +52,7 @@ header
   	padding					: 150px 0;
   	background-color		: #ffffff;
   	background-repeat		: no-repeat;
-  	height					: 100px;
+  	width				: 100%;
   	text-shadow				: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -60,16 +60,19 @@ header
 #slide-img1
 {
   	background-image		: url("../media/sfondo2.jpg");
+	width				: 100%;
 }
 
 #slide-img2
 {
   	background-image		: url("../media/sfondo3.jpg");
+	width				: 100%;
 }
 
 #slide-img3
 {
   	background-image		: url("../media/sfondo4.jpg");
+	width				: 100%;
 }
 
 .parallax

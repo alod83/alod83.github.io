@@ -41,18 +41,18 @@ header
 #slide1
 {
   	padding					: 150px 0;
-  	background-image		: url("../media/sfondo1.jpg");
-  	background-color		: #ffffff;
-  	background-repeat		: no-repeat;
+  	background-image			: url("../media/sfondo1.jpg");
+  	background-color			: #ffffff;
+  	background-repeat			: no-repeat;
   	text-shadow				: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .slide-img
 {
   	padding					: 150px 0;
-  	background-color		: #ffffff;
-  	background-repeat		: no-repeat;
-  	width				: 100%;
+  	background-color			: #ffffff;
+  	background-repeat			: no-repeat;
+  	width					: 100%;
   	text-shadow				: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -78,17 +78,18 @@ header
 .parallax
 {
 	background-size			: cover;
-  	background-attachment	: fixed;
+  	background-attachment		: fixed;
+	width				: 100%;
 }
 
 .title{
 	font-size				: 80px;
 	color					: #ffffff;
-	text-transform			: uppercase;
+	text-transform				: uppercase;
 	font-weight				: 100;
-	background-color		: rgba(0,0,0,0.6);
+	background-color			: rgba(0,0,0,0.6);
 	width					: 70%;
-	margin-right			: 15%;
+	margin-right				: 15%;
 	margin-left				: 15%;
 	margin-top				: 10%;
 }

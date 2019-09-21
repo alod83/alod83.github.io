@@ -61,6 +61,7 @@ header
 {
   	background-image		: url("../media/sfondo2.jpg");
 	width				: 100%;
+	max-height			:25%;
 }
 
 #slide-img2
@@ -79,7 +80,7 @@ header
 {
 	background-size			: cover;
   	background-attachment		: fixed;
-	max-height			:25%;
+	
 }
 
 .title{

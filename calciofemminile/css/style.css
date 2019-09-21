@@ -175,7 +175,6 @@ header
 	text-align				: center;
 	font-size				: 50px;
 	color					: #ffffff;
-	text-trasform				: uppercase;
   	
 }
 
@@ -259,5 +258,6 @@ p.citazione{
 
 .overImg
 {
-	color			: #4CAF50;
+	color			: #ffffff;
+	text-trasform		: uppercase;
 }

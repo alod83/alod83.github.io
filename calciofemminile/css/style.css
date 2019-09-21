@@ -174,8 +174,14 @@ header
 .sectionTitle{
 	text-align				: center;
 	font-size				: 50px;
-	color					: #ffffff;
+	color					: #000000;
   	
+}
+
+
+.sectionTitle overImg{
+	color					: #ffffff;
+	text-trasform				: uppercase;
 }
 
 

@@ -97,17 +97,17 @@ header
 	font-size				: 22px;
 	z-index					: 10;
 	text-align				: justify;
-  	background-size			: 400% 400%;
+  	background-size				: 400% 400%;
   	color					: #000000;
-  	background-color		: #ffffff;
-  	font-family				: "Raleway", "Helvetica Neue",  'Ubuntu', helvetica, arial, sans-serif;
-	display                 : inline-block;
-	width                   : 70%;
+  	background-color			: #ffffff;
+  	font-family				: 'Lora', serif;
+	display                 		: inline-block;
+	width                  			 : 70%;
 }
 
 .divRight{
 	float					: right;
-	margin-right			: 10%;
+	margin-right				: 10%;
 	margin-left				: 10%;
 	text-align				: left;
 	
@@ -115,8 +115,8 @@ header
 
 .divLeft{
 	margin-left				: 0;
-	padding-left			: 0;
-	margin-right			: 5%;
+	padding-left				: 0;
+	margin-right				: 5%;
 	margin-top				: 3%;
 }
 
@@ -140,8 +140,8 @@ header
 	position				: relative;
 	width					: 920px;
 	margin-top				: -600px;
-	margin-right			: 0px;
-	margin-bottom			: 0px;
+	margin-right				: 0px;
+	margin-bottom				: 0px;
 	
 	
 }
@@ -150,7 +150,7 @@ header
 {
 	height					: 600px;
 	width					: 500px;
-	margin-right			: 0px;
+	margin-right				: 0px;
 }
 
 .divRightMondiali
@@ -159,8 +159,8 @@ header
 	position				: relative;
 	width					: 950px;
 	margin-top				: -800px;
-	margin-right			: 0px;
-	margin-bottom			: 0px;
+	margin-right				: 0px;
+	margin-bottom				: 0px;
 	
 }
 
@@ -184,7 +184,7 @@ header
 	color					: #ffffff;
 	position				: relative;
 	padding-top				: 250px;
-  	padding-bottom			: 250px;
+  	padding-bottom				: 250px;
 	margin					: 0 auto;
 	font-weight				: 100;
 }
@@ -206,7 +206,7 @@ header
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-variant			: small-caps;
+  font-variant: small-caps;
 }
 
 .topnav a:hover {
@@ -235,7 +235,7 @@ iframe{
 
 p.citazione{
 	font-size		: 36px;
-	border-style	: double;
+	border-style		: double;
 	width			: 70%;
  	position		: relative;
  	left			: 15%;

@@ -19,15 +19,22 @@ header
 }
 
 
-.slide
+.paragrafo
 {
-  	width					: 90%;
   	position				: relative;
   	padding					: 0;
   	margin					: 0;
-  	text-align				: center;
   	left					: 0%;
   	right					: 0%;
+  	font-size				: 22px;
+	z-index					: 10;
+	text-align				: justify;
+  	background-size			: 400% 400%;
+  	color					: #000000;
+  	background-color		: #ffffff;
+  	font-family				: 'Lora', serif;
+	display                 : inline-block;
+	width                  	: 70%;
 }
 
 .slide-title
@@ -94,17 +101,6 @@ header
 	margin-top				: 10%;
 }
 
-.text{
-	font-size				: 22px;
-	z-index					: 10;
-	text-align				: justify;
-  	background-size				: 400% 400%;
-  	color					: #000000;
-  	background-color			: #ffffff;
-  	font-family				: 'Lora', serif;
-	display                 		: inline-block;
-	width                  			 : 70%;
-}
 
 .divRight{
 	float					: right;
@@ -197,9 +193,6 @@ header
 }
 
 
-
-
-
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -230,12 +223,14 @@ header
   display: none;
 }
 
-.domanda{
-	font-size		: 30px;
-	
+.grafico{
+	width			: 80%;
+	margin: 0 auto;
+	display:block;	
 }
 
-iframe{
+iframe
+{
 	border			: none;
 	width			: 100%;
 }
@@ -249,18 +244,7 @@ p.citazione{
  	padding			: 10px 10px 10px 10px;      
 }
 
-.firma{
-	font-family		: Snell Roundhand, cursive;
-	text-decoration	: none;
-	color			: #4CAF50;
-	position		: relative;
-	left			: 70%;
-}
 
-.firma a:hover
-{
-	color			: #4CAF50;
-}
 
 .overImg
 {
@@ -269,7 +253,7 @@ p.citazione{
 }
 
 #sportPraticati{height:600px;}
-#luoghi{height:350px;}
+#luoghi{height:430px;}
 #mostPopularTeamSport{height:780px;}
 #giocatriciMondo{height:520px;}
 #uefad3Players{height:880px;}

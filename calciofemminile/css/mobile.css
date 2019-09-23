@@ -1,9 +1,4 @@
 @media screen and (max-width:1024px){ 
-    .paragrafo{
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 15px;
-    }
 
     .titoloSezioneTesto{
         font-size: 40px;
@@ -14,6 +9,30 @@
         font-size: 20px;
         padding: 15px;
     }
+    
+    .paragrafo
+	{
+  		width : 90%;
+	}
+
+	.grafico
+	{
+		width	: 100%;
+	}
+
+#sportPraticati{height:1150px; width: 100%;}
+#luoghi{height:620px;}
+#mostPopularTeamSport{height: 300px;}
+#giocatriciMondo{height:600px;}
+#uefad3Players{height:880px;}
+#uefad3Referee{height:880px;}
+#referee{height:700px;}
+#players{height:520px;}
+#eta{height:650px;}
+#stipendi{height:350px;}
+#uefad3Attendance{height:780px;}
+#rankingFIFA{height:750px;}
+
 
 }
 
@@ -80,13 +99,6 @@
   	transition-duration: 1s;
   }
   
- .iframe-plotly
-{
-	width:	90%;
-	height:	220px;
-	margin-left: 5%;
-	margin-right: 5%;
-}
 
 .divRight{
 	width					: 100%;
@@ -106,28 +118,6 @@
 	font-size				: 20px;
 	height					: 10%;
 	margin-top				: 10%;
-}
-
-.slide{
-	height: 600px;
-}
-
-#sportPraticati{height:1150px; width: 100%;}
-#luoghi{height:620px;}
-#mostPopularTeamSport{height: 300px;}
-#giocatriciMondo{height:570px;}
-#uefad3Players{height:880px;}
-#uefad3Referee{height:880px;}
-#referee{height:700px;}
-#players{height:520px;}
-#eta{height:620px;}
-#stipendi{height:520px;}
-#uefad3Attendance{height:780px;}
-#rankingFIFA{height:750px;}
-
-.text
-{
-	width: 95%;
 }
 
 }

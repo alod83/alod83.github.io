@@ -2,19 +2,19 @@ body
 {
 	margin					: 0;
 	max-width				: 100%;
-	font-family				: 'Lora', serif;
-	text-align             			 : center;
+	font-family				: 'Ubuntu', sans-serif;
+	text-align              : center;
 }
 
 header
 {
 	width					: 100%;
-	background-color			: #000000;
+	background-color		: #000000;
 	position				: fixed;
 	z-index					: 15;
   	box-shadow				: 0px 2px 20px;
-  	opacity					: 0.9;
-  	top					: 0;
+  	opacity					: 0.6;
+  	top						: 0;
   	
 }
 
@@ -41,18 +41,18 @@ header
 #slide1
 {
   	padding					: 150px 0;
-  	background-image			: url("../media/sfondo1.jpg");
-  	background-color			: #ffffff;
-  	background-repeat			: no-repeat;
+  	background-image		: url("../media/sfondo1.jpg");
+  	background-color		: #ffffff;
+  	background-repeat		: no-repeat;
   	text-shadow				: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .slide-img
 {
   	padding					: 150px 0;
-  	background-color			: #ffffff;
-  	background-repeat			: no-repeat;
-  	width					: 100%;
+  	background-color		: #ffffff;
+  	background-repeat		: no-repeat;
+  	height					: 100px;
   	text-shadow				: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -60,36 +60,32 @@ header
 #slide-img1
 {
   	background-image		: url("../media/sfondo2.jpg");
-	width				: 100%;
 }
 
 #slide-img2
 {
   	background-image		: url("../media/sfondo3.jpg");
-	width				: 100%;
 }
 
 #slide-img3
 {
   	background-image		: url("../media/sfondo4.jpg");
-	width				: 100%;
 }
 
 .parallax
 {
 	background-size			: cover;
-  	background-attachment		: fixed;
-	
+  	background-attachment	: fixed;
 }
 
 .title{
 	font-size				: 80px;
 	color					: #ffffff;
-	text-transform				: uppercase;
+	text-transform			: uppercase;
 	font-weight				: 100;
-	background-color			: rgba(0,0,0,0.6);
+	background-color		: rgba(0,0,0,0.6);
 	width					: 70%;
-	margin-right				: 15%;
+	margin-right			: 15%;
 	margin-left				: 15%;
 	margin-top				: 10%;
 }
@@ -98,17 +94,17 @@ header
 	font-size				: 22px;
 	z-index					: 10;
 	text-align				: justify;
-  	background-size				: 400% 400%;
+  	background-size			: 400% 400%;
   	color					: #000000;
-  	background-color			: #ffffff;
-  	font-family				: 'Lora', serif;
-	display                 		: inline-block;
-	width                  			 : 70%;
+  	background-color		: #ffffff;
+  	font-family				: "Raleway", "Helvetica Neue",  'Ubuntu', helvetica, arial, sans-serif;
+	display                 : inline-block;
+	width                   : 70%;
 }
 
 .divRight{
 	float					: right;
-	margin-right				: 10%;
+	margin-right			: 10%;
 	margin-left				: 10%;
 	text-align				: left;
 	
@@ -116,8 +112,8 @@ header
 
 .divLeft{
 	margin-left				: 0;
-	padding-left				: 0;
-	margin-right				: 5%;
+	padding-left			: 0;
+	margin-right			: 5%;
 	margin-top				: 3%;
 }
 
@@ -141,8 +137,8 @@ header
 	position				: relative;
 	width					: 920px;
 	margin-top				: -600px;
-	margin-right				: 0px;
-	margin-bottom				: 0px;
+	margin-right			: 0px;
+	margin-bottom			: 0px;
 	
 	
 }
@@ -151,7 +147,7 @@ header
 {
 	height					: 600px;
 	width					: 500px;
-	margin-right				: 0px;
+	margin-right			: 0px;
 }
 
 .divRightMondiali
@@ -160,8 +156,8 @@ header
 	position				: relative;
 	width					: 950px;
 	margin-top				: -800px;
-	margin-right				: 0px;
-	margin-bottom				: 0px;
+	margin-right			: 0px;
+	margin-bottom			: 0px;
 	
 }
 
@@ -174,14 +170,8 @@ header
 .sectionTitle{
 	text-align				: center;
 	font-size				: 50px;
-	color					: black;
+	color					: #000000;
   	
-}
-
-
-.sectionTitle overImg{
-	color					: #ffffff;
-	text-transform				: uppercase;
 }
 
 
@@ -191,7 +181,7 @@ header
 	color					: #ffffff;
 	position				: relative;
 	padding-top				: 250px;
-  	padding-bottom				: 250px;
+  	padding-bottom			: 250px;
 	margin					: 0 auto;
 	font-weight				: 100;
 }
@@ -213,7 +203,7 @@ header
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-variant: small-caps;
+  font-variant			: small-caps;
 }
 
 .topnav a:hover {
@@ -242,7 +232,7 @@ iframe{
 
 p.citazione{
 	font-size		: 36px;
-	border-style		: double;
+	border-style	: double;
 	width			: 70%;
  	position		: relative;
  	left			: 15%;
@@ -264,8 +254,7 @@ p.citazione{
 
 .overImg
 {
-	color			: #ffffff;
-	text-trasform		: uppercase;
+	color			: #4CAF50;
 }
 
 #sportPraticati{height:600px;}

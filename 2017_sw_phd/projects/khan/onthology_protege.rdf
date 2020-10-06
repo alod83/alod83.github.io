@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/Abdullah/Dropbox/Exam/Author_by -->
+
+    <ObjectProperty rdf:about="file:/C:/Users/Abdullah/Dropbox/Exam/Author_by">
+        <rdfs:domain rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Music"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Director"/>
+    </ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Abdullah/Dropbox/Exam/has_partecipated_in -->
+
+    <ObjectProperty rdf:about="file:/C:/Users/Abdullah/Dropbox/Exam/has_partecipated_in">
+        <rdfs:domain rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Actor"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Music"/>
+    </ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Abdullah/Dropbox/Exam/is_titled -->
+
+    <ObjectProperty rdf:about="file:/C:/Users/Abdullah/Dropbox/Exam/is_titled">
+        <rdfs:domain rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Music"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/Abdullah/Dropbox/Exam/Actor -->
+
+    <Class rdf:about="file:/C:/Users/Abdullah/Dropbox/Exam/Actor">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </Class>
+    
+
+
+    <!-- file:/C:/Users/Abdullah/Dropbox/Exam/Director -->
+
+    <Class rdf:about="file:/C:/Users/Abdullah/Dropbox/Exam/Director">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </Class>
+    
+
+
+    <!-- file:/C:/Users/Abdullah/Dropbox/Exam/Blues -->
+
+    <Class rdf:about="file:/C:/Users/Abdullah/Dropbox/Exam/Blues">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Music"/>
+    </Class>
+    
+
+
+    <!-- file:/C:/Users/Abdullah/Dropbox/Exam/Music -->
+
+    <Class rdf:about="file:/C:/Users/Abdullah/Dropbox/Exam/Music"/>
+    
+
+
+    <!-- file:/C:/Users/Abdullah/Dropbox/Exam/Rock -->
+
+    <Class rdf:about="file:/C:/Users/Abdullah/Dropbox/Exam/Rock">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Music"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Wan -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Wan"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#VascoRossi-->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#VascoRossi">
+        <has_partecipated_in rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Bollicine"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Blues -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#BluesBrothers">
+        <rdf:type rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Blues"/>
+        <Author_by rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Landis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Bollicine -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#VascoRossi">
+        <rdf:type rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Rock"/>
+        <Author_by rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Vasco "/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Landis -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Landis ">
+        <rdf:type rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Director"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Atif_Aslam-->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Atif_Aslam">
+        <rdf:type rdf:resource="file:/C:/Users/Abdullah/Dropbox/Exam/Actor"/>
+        <has_partecipated_in rdf:resource="http://www.co-ode.org/ontologies/ont.owl#tajdar-e-Haram"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

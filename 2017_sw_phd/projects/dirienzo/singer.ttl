@@ -1,0 +1,206 @@
+@prefix : <http://localhost:8080/mydataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://localhost:8080/mydataset/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+<http://localhost:8080/mydataset/> rdf:type owl:Ontology ;
+                                    owl:imports foaf: .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://localhost:8080/mydataset/death_date
+:death_date rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain foaf:Agent ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://localhost:8080/mydataset/first_album
+:first_album rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain foaf:Agent ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://localhost:8080/mydataset/last_album
+:last_album rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain foaf:Agent ;
+            rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://localhost:8080/mydataset/PezzaliMax
+:PezzaliMax rdf:type owl:NamedIndividual ;
+                  :first_album "Hanno ucciso l'Uomo Ragno" ;
+                  :last_album "Astronave Max" ;
+                  foaf:birthday "1967-11-14" ;
+                  foaf:name "Massimo" ;
+                  foaf:surname "Pezzali" ;
+				  owl:sameAs dbpedia:Max_Pezzali .
+				  
+				  
+				  
+###  http://localhost:8080/mydataset/VendittiAntonello
+:VendittiAntonello rdf:type owl:NamedIndividual ;
+                  :first_album " Theorius Campus" ;
+                  :last_album " Tortuga" ;
+                  foaf:birthday "1949-03-08" ;
+                  foaf:name "Antonio" ;
+                  foaf:surname "Venditti" ;
+				  owl:sameAs dbpedia:Antonello_Venditti .				  
+				  
+				  
+###  http://localhost:8080/mydataset/DeGregoriFrancesco
+:DeGregoriFrancesco rdf:type owl:NamedIndividual ;
+                  :first_album " Theorius Campus" ;
+                  :last_album " De Gregori canta Bob Dylan - Amore e furto" ;
+                  foaf:birthday "1951-04-04" ;
+                  foaf:name "Francesco" ;
+                  foaf:surname "De Gregori" ;
+				  owl:sameAs dbpedia:Francesco_De_Gregori .
+				  
+				  
+				  
+###  http://localhost:8080/mydataset/FerroTiziano
+:FerroTiziano rdf:type owl:NamedIndividual ;
+                  :first_album "Rosso relativo" ;
+                  :last_album "Il mestiere della vita" ;
+                  foaf:birthday "1980-02-21" ;
+                  foaf:name "Tiziano" ;
+                  foaf:surname "Ferro" ;
+				  owl:sameAs dbpedia:Tiziano_Ferro .
+				  
+				  
+				  
+###  http://localhost:8080/mydataset/ErosRamazzotti
+:ErosRamazzotti rdf:type owl:NamedIndividual ;
+                  :first_album "Cuori agitati" ;
+                  :last_album "Perfetto" ;
+                  foaf:birthday "1963-10-28" ;
+                  foaf:name "Eros" ;
+                  foaf:surname "Ramazzotti" ;
+				  owl:sameAs dbpedia:Eros_Ramazzotti .
+				  
+				  
+				  
+###  http://localhost:8080/mydataset/PausiniLaura
+:PausiniLaura rdf:type owl:NamedIndividual ;
+                  :first_album "Laura Pausini" ;
+                  :last_album "Simili" ;
+                  foaf:birthday "1974-05-16" ;
+                  foaf:name "Laura" ;
+                  foaf:surname "Pausini" ;
+				  owl:sameAs dbpedia:Laura_Pausini .
+				  
+				  
+				  
+###  http://localhost:8080/mydataset/Zucchero
+:Zucchero rdf:type owl:NamedIndividual ;
+                  :first_album " Un po' di Zucchero" ;
+                  :last_album " Black Cat" ;
+                  foaf:birthday "1955-11-25" ;
+                  foaf:name "Adelmo" ;
+                  foaf:surname "Fornaciari" ;
+				  owl:sameAs wikidata:Q125948 .
+				  
+				  
+				  
+###  http://localhost:8080/mydataset/Jovanotti
+:Jovanotti rdf:type owl:NamedIndividual ;
+                  :first_album " Jovanotti for President" ;
+                  :last_album "Lorenzo 2015 CC." ;
+                  foaf:birthday "1966-11-27" ;
+                  foaf:name "Lorenzo" ;
+                  foaf:surname "Cherubini" ;
+				  owl:sameAs wikidata:Q505455 .
+				  
+				  
+				  
+###  http://localhost:8080/mydataset/BattiatoFranco
+:BattiatoFranco rdf:type owl:NamedIndividual ;
+                  :first_album " Fetus" ;
+                  :last_album " Anthology - Le nostre anime" ;
+                  foaf:birthday "1945-03-23" ;
+                  foaf:name "Franco" ;
+                  foaf:surname "Battiato" ;
+				  owl:sameAs dbpedia:Franco_Battiato .
+
+
+
+###  http://localhost:8080/mydataset/CelentanoAdriano
+:CelentanoAdriano rdf:type owl:NamedIndividual ;
+                  :first_album "Adriano Celentano con Giulio Libano e la sua orchestra" ;
+                  :last_album "MinaCelentano - cofanetto" ;
+                  foaf:birthday "1938-01-06" ;
+                  foaf:name "Adriano" ;
+                  foaf:surname "Celentano" ;
+				  owl:sameAs dbpedia:Adriano_Celentano .
+
+
+###  http://localhost:8080/mydataset/CoccianteRiccardo
+:CoccianteRiccardo rdf:type owl:NamedIndividual ;
+                   :first_album "Mu" ;
+                   :last_album "Songs" ;
+                   foaf:birthday "1946-02-20" ;
+                   foaf:name "Riccardo" ;
+                   foaf:surname "Cocciante" ;
+				  owl:sameAs dbpedia:Riccardo_Cocciante .
+
+
+###  http://localhost:8080/mydataset/DanielePino
+:DanielePino rdf:type owl:NamedIndividual ,
+                      foaf:Person ;
+             :death_date "2015-01-04" ;
+             :first_album "Terra mia" ;
+             :last_album "La grande madre" ;
+             foaf:birthday "1955-03-19" ;
+             foaf:name "Pino" ;
+             foaf:surname "Daniele" ;
+			 owl:sameAs dbpedia:Pino_Daniele .
+
+
+###  http://localhost:8080/mydataset/DeAndrèFabrizio
+:DeAndrèFabrizio rdf:type owl:NamedIndividual ;
+                 :death_date "1999-01-11" ;
+                 :first_album "Volume I" ;
+                 :last_album "Anime salve" ;
+                 foaf:birthday "1640-02-18" ;
+                 foaf:name "Fabrizio" ;
+                 foaf:surname "De Andrè" ;
+				 owl:sameAs wikidata:Q25106 .
+
+
+###  http://localhost:8080/mydataset/LigabueLuciano
+:LigabueLuciano rdf:type owl:NamedIndividual ;
+                :first_album "Ligabue" ;
+                :last_album "Made in Italy" ;
+                foaf:birthday "1960-03-13" ;
+                foaf:name "Luciano" ;
+                foaf:surname "Ligabue" ;
+				owl:sameAs wikidata:Q563699 .
+
+
+###  http://localhost:8080/mydataset/VascoRossi
+:VascoRossi rdf:type owl:NamedIndividual ,
+                     foaf:Person ;
+            :first_album "...Ma cosa vuoi che sia una canzone..." ;
+            :last_album "Sono innocente" ;
+            foaf:birthday "1952-02-07" ;
+            foaf:name "Vasco" ;
+            foaf:surname "Rossi" ;
+			owl:sameAs wikidata:Q17171 .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

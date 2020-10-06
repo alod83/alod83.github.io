@@ -1,0 +1,36 @@
+﻿@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms:  <https://prefix.cc/dcterms> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <#> .
+
+:MovieDataset a void:Dataset
+	dcterms:licese PDDL
+	dcterms:subject <http://dbpedia.org/resource/movie>
+	dcterms:title "MusicDataset";
+	dcterms:description "My Music dataset";
+	dcterms:contributor : Abdullah_khan;
+	dcterms:contributor : University_of_Pisa;
+	dcterms:source	<http://dbpedia.org/resource/Wikipedia>;
+	dcterms:modified "2017-02-08"^^xsd:date;
+	.
+	
+	:University_di_Pisa a foaf:Organization;
+	rdfs:label "University of Pisa";
+	foaf:homepage <https://www.unipi.it/>;
+	.
+	
+	:Abdullah_Khan a foaf:Person;
+	foaf:firstName "Abdullah";
+	foaf:SurName "Khan";
+	.
+	
+	
+	
+
+:MovieDataset_link_DBpedia a void:Linkset ;
+	void:target :MusicDataset ;
+    void:target <http://dbpedia.org/>;
+    void:subset <http://dbpedia.org/>;
+	void:linkPredicate owl:sameAs.

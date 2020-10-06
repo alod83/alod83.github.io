@@ -1,0 +1,218 @@
+@prefix : <http://localhost:8080/mydataset#> .
+@prefix dc: <http://purl.org/dc/elements/1/1> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://localhost:8080/mydataset> .
+
+<http://localhost:8080/mydataset> rdf:type owl:Ontology ;
+                                   owl:imports foaf: .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://localhost:8080/mydataset/decimo
+<http://localhost:8080/mydataset/decimo> rdf:type owl:NamedIndividual ,
+                                                  owl:Thing ;
+                                         <http://purl.org/dc/elements/1.1/date> 2014 ,
+                                                                                "adventure" ;
+                                         <http://purl.org/dc/elements/1.1/title> "Interstellar" .
+
+
+###  http://localhost:8080/mydataset/diciannovesimo
+<http://localhost:8080/mydataset/diciannovesimo> rdf:type owl:NamedIndividual ,
+                                                          owl:Thing ;
+                                                 <http://purl.org/dc/elements/1.1/date> 1999 ;
+                                                 <http://purl.org/dc/elements/1.1/description> "drama" ;
+                                                 <http://purl.org/dc/elements/1.1/title> "Fight Club" .
+
+
+###  http://localhost:8080/mydataset/diciassettesimo
+<http://localhost:8080/mydataset/diciassettesimo> rdf:type owl:NamedIndividual ,
+                                                           owl:Thing ;
+                                                  <http://purl.org/dc/elements/1.1/date> 1994 ;
+                                                  <http://purl.org/dc/elements/1.1/description> "comedy" ;
+                                                  <http://purl.org/dc/elements/1.1/title> "Forrest Gump" .
+
+
+###  http://localhost:8080/mydataset/diciottesimo
+<http://localhost:8080/mydataset/diciottesimo> rdf:type owl:NamedIndividual ,
+                                                        owl:Thing ;
+                                               <http://purl.org/dc/elements/1.1/date> 1998 ;
+                                               <http://purl.org/dc/elements/1.1/description> "war" ;
+                                               <http://purl.org/dc/elements/1.1/title> "Salvate il soldato Ryan" .
+
+
+###  http://localhost:8080/mydataset/dodicesimo
+<http://localhost:8080/mydataset/dodicesimo> rdf:type owl:NamedIndividual ,
+                                                      owl:Thing ;
+                                             <http://purl.org/dc/elements/1.1/date> 2000 ;
+                                             <http://purl.org/dc/elements/1.1/description> "mystery" ;
+                                             <http://purl.org/dc/elements/1.1/title> "Memento" .
+
+
+###  http://localhost:8080/mydataset/nono
+<http://localhost:8080/mydataset/nono> rdf:type owl:NamedIndividual ,
+                                                owl:Thing ;
+                                       <http://purl.org/dc/elements/1.1/date> 2010 ;
+                                       <http://purl.org/dc/elements/1.1/description> "action" ;
+                                       <http://purl.org/dc/elements/1.1/title> "Inception" .
+
+
+###  http://localhost:8080/mydataset/ottavo
+<http://localhost:8080/mydataset/ottavo> rdf:type owl:NamedIndividual ,
+                                                  owl:Thing ;
+                                         <http://purl.org/dc/elements/1.1/date> 1991 ;
+                                         <http://purl.org/dc/elements/1.1/description> "crime" ;
+                                         <http://purl.org/dc/elements/1.1/title> "Il silenzio degli innocenti" .
+
+
+###  http://localhost:8080/mydataset/primo
+<http://localhost:8080/mydataset/primo> rdf:type owl:NamedIndividual ,
+                                                 owl:Thing ;
+                                        <http://purl.org/dc/elements/1.1/date> 2014 ;
+                                        <http://purl.org/dc/elements/1.1/description> "biography" ;
+                                        <http://purl.org/dc/elements/1.1/title> "Big Eyes" .
+
+
+###  http://localhost:8080/mydataset/quarto
+<http://localhost:8080/mydataset/quarto> rdf:type owl:NamedIndividual ,
+                                                  owl:Thing ;
+                                         <http://purl.org/dc/elements/1.1/date> 203 ;
+                                         <http://purl.org/dc/elements/1.1/description> "adventure" ;
+                                         <http://purl.org/dc/elements/1.1/title> "Big Fish" .
+
+
+###  http://localhost:8080/mydataset/quattordicesimo
+<http://localhost:8080/mydataset/quattordicesimo> rdf:type owl:NamedIndividual ,
+                                                           owl:Thing ;
+                                                  <http://purl.org/dc/elements/1.1/date> 2011 ;
+                                                  <http://purl.org/dc/elements/1.1/description> "drama" ;
+                                                  <http://purl.org/dc/elements/1.1/title> "Another Earth" .
+
+
+###  http://localhost:8080/mydataset/quindicesimo
+<http://localhost:8080/mydataset/quindicesimo> rdf:type owl:NamedIndividual ,
+                                                        owl:Thing ;
+                                               <http://purl.org/dc/elements/1.1/date> 2007 ;
+                                               <http://purl.org/dc/elements/1.1/description> "fantasy" ;
+                                               <http://purl.org/dc/elements/1.1/title> "The Man from Earth" .
+
+
+###  http://localhost:8080/mydataset/quinto
+<http://localhost:8080/mydataset/quinto> rdf:type owl:NamedIndividual ,
+                                                  owl:Thing ;
+                                         <http://purl.org/dc/elements/1.1/date> 2011 ;
+                                         <http://purl.org/dc/elements/1.1/description> "drama" ;
+                                         <http://purl.org/dc/elements/1.1/title> "Melancholia" .
+
+
+###  http://localhost:8080/mydataset/secondo
+<http://localhost:8080/mydataset/secondo> rdf:type owl:NamedIndividual ,
+                                                   owl:Thing ;
+                                          <http://purl.org/dc/elements/1.1/date> 2013 ;
+                                          <http://purl.org/dc/elements/1.1/description> "adventure" ;
+                                          <http://purl.org/dc/elements/1.1/title> "I sogni segreti di Walter Mitty" .
+
+
+###  http://localhost:8080/mydataset/sedicesimo
+<http://localhost:8080/mydataset/sedicesimo> rdf:type owl:NamedIndividual ,
+                                                      owl:Thing ;
+                                             <http://purl.org/dc/elements/1.1/date> 1998 ;
+                                             <http://purl.org/dc/elements/1.1/description> "horror" ;
+                                             <http://purl.org/dc/elements/1.1/title> "Pi greco - Il teorema del delirio" .
+
+
+###  http://localhost:8080/mydataset/sesto
+<http://localhost:8080/mydataset/sesto> rdf:type owl:NamedIndividual ,
+                                                 owl:Thing ;
+                                        <http://purl.org/dc/elements/1.1/date> 2013 ;
+                                        <http://purl.org/dc/elements/1.1/description> "drama" ;
+                                        <http://purl.org/dc/elements/1.1/title> "Nymphomaniac" .
+
+
+###  http://localhost:8080/mydataset/settimo
+<http://localhost:8080/mydataset/settimo> rdf:type owl:NamedIndividual ,
+                                                   owl:Thing ;
+                                          <http://purl.org/dc/elements/1.1/date> 1992 ;
+                                          <http://purl.org/dc/elements/1.1/description> "crime" ;
+                                          <http://purl.org/dc/elements/1.1/title> "Le iene" .
+
+
+###  http://localhost:8080/mydataset/terzo
+<http://localhost:8080/mydataset/terzo> rdf:type owl:NamedIndividual ,
+                                                 owl:Thing ;
+                                        <http://purl.org/dc/elements/1.1/date> 2013 ;
+                                        <http://purl.org/dc/elements/1.1/description> "drama" ;
+                                        <http://purl.org/dc/elements/1.1/title> "Lei" .
+
+
+###  http://localhost:8080/mydataset/tredicesimo
+<http://localhost:8080/mydataset/tredicesimo> rdf:type owl:NamedIndividual ,
+                                                       owl:Thing ;
+                                              <http://purl.org/dc/elements/1.1/date> 2002 ;
+                                              <http://purl.org/dc/elements/1.1/description> "adventure" ;
+                                              <http://purl.org/dc/elements/1.1/title> "Il treno per il Darjeeling" .
+
+
+###  http://localhost:8080/mydataset/undicesimo
+<http://localhost:8080/mydataset/undicesimo> rdf:type owl:NamedIndividual ,
+                                                      owl:Thing ;
+                                             <http://purl.org/dc/elements/1.1/date> 2012 ;
+                                             <http://purl.org/dc/elements/1.1/description> "comedy" ;
+                                             <http://purl.org/dc/elements/1.1/title> "Il lato positivo" .
+
+
+###  http://localhost:8080/mydataset/ventesimo
+<http://localhost:8080/mydataset/ventesimo> rdf:type owl:NamedIndividual ,
+                                                     owl:Thing ;
+                                            <http://purl.org/dc/elements/1.1/date> 2012 ;
+                                            <http://purl.org/dc/elements/1.1/description> "crime" ;
+                                            <http://purl.org/dc/elements/1.1/title> "Come un tuono" .
+
+
+###  http://localhost:8080/mydataset/venticinquesimo
+<http://localhost:8080/mydataset/venticinquesimo> rdf:type owl:NamedIndividual ,
+                                                           owl:Thing ;
+                                                  <http://purl.org/dc/elements/1.1/date> 2014 ;
+                                                  <http://purl.org/dc/elements/1.1/description> "drama" ;
+                                                  <http://purl.org/dc/elements/1.1/title> "Maps to the Stars" .
+
+
+###  http://localhost:8080/mydataset/ventiduesimo
+<http://localhost:8080/mydataset/ventiduesimo> rdf:type owl:NamedIndividual ,
+                                                        owl:Thing ;
+                                               <http://purl.org/dc/elements/1.1/date> 2015 ;
+                                               <http://purl.org/dc/elements/1.1/description> "mystery" ;
+                                               <http://purl.org/dc/elements/1.1/title> "Ex Machina" .
+
+
+###  http://localhost:8080/mydataset/ventiquattresimo
+<http://localhost:8080/mydataset/ventiquattresimo> rdf:type owl:NamedIndividual ,
+                                                            owl:Thing ;
+                                                   <http://purl.org/dc/elements/1.1/date> 2015 ;
+                                                   <http://purl.org/dc/elements/1.1/description> "action" ;
+                                                   <http://purl.org/dc/elements/1.1/title> "Humandroid" .
+
+
+###  http://localhost:8080/mydataset/ventitresimo
+<http://localhost:8080/mydataset/ventitresimo> rdf:type owl:NamedIndividual ,
+                                                        owl:Thing ;
+                                               <http://purl.org/dc/elements/1.1/date> 2014 ,
+                                                                                      "comedy" ;
+                                               <http://purl.org/dc/elements/1.1/title> "Birdman" .
+
+
+###  http://localhost:8080/mydataset/ventunesimo
+<http://localhost:8080/mydataset/ventunesimo> rdf:type owl:NamedIndividual ,
+                                                       owl:Thing ;
+                                              <http://purl.org/dc/elements/1.1/date> 2009 ,
+                                                                                     "horror" ;
+                                              <http://purl.org/dc/elements/1.1/title> "Antichrist" .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" >
+	
+	<rdfs:Class rdf:about="Thriller">
+		<rdfs:subClassOf rdf:resource="Movie"/>
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="Horror">
+		<rdfs:subClassOf rdf:resource="Movie"/>
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="Director">
+		<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	</rdfs:Class>
+	
+	<rdfs:Class rdf:about="Actor">
+		<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	</rdfs:Class>
+	
+	
+	<rdf:Property rdf:about="directed_by">
+		<rdfs:domain rdf:resource="Movie"/>
+		<rdfs:range rdf:resource="Director"/>
+	</rdf:Property>
+	
+	<rdf:Property rdf:about="has_partecipated_in">
+		<rdfs:domain rdf:resource="Actor"/>
+		<rdfs:range rdf:resource="Movie"/>
+	</rdf:Property>
+	
+	<rdf:Property rdf:about="is_titled">
+		<rdfs:domain rdf:resource="Movie"/>
+	</rdf:Property>
+</rdf:RDF>

@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/Alessandro/Dropbox/Esami/directed_by -->
+
+    <ObjectProperty rdf:about="file:/C:/Users/Alessandro/Dropbox/Esami/directed_by">
+        <rdfs:domain rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Movie"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Director"/>
+    </ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Alessandro/Dropbox/Esami/has_partecipated_in -->
+
+    <ObjectProperty rdf:about="file:/C:/Users/Alessandro/Dropbox/Esami/has_partecipated_in">
+        <rdfs:domain rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Actor"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Movie"/>
+    </ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Alessandro/Dropbox/Esami/is_titled -->
+
+    <ObjectProperty rdf:about="file:/C:/Users/Alessandro/Dropbox/Esami/is_titled">
+        <rdfs:domain rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Movie"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/Alessandro/Dropbox/Esami/Actor -->
+
+    <Class rdf:about="file:/C:/Users/Alessandro/Dropbox/Esami/Actor">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </Class>
+    
+
+
+    <!-- file:/C:/Users/Alessandro/Dropbox/Esami/Director -->
+
+    <Class rdf:about="file:/C:/Users/Alessandro/Dropbox/Esami/Director">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </Class>
+    
+
+
+    <!-- file:/C:/Users/Alessandro/Dropbox/Esami/Horror -->
+
+    <Class rdf:about="file:/C:/Users/Alessandro/Dropbox/Esami/Horror">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Movie"/>
+    </Class>
+    
+
+
+    <!-- file:/C:/Users/Alessandro/Dropbox/Esami/Movie -->
+
+    <Class rdf:about="file:/C:/Users/Alessandro/Dropbox/Esami/Movie"/>
+    
+
+
+    <!-- file:/C:/Users/Alessandro/Dropbox/Esami/Thriller -->
+
+    <Class rdf:about="file:/C:/Users/Alessandro/Dropbox/Esami/Thriller">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Movie"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Carpenter -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Carpenter"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Di_Caprio -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Di_Caprio">
+        <has_partecipated_in rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Inception"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Halloween -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Halloween">
+        <rdf:type rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Horror"/>
+        <directed_by rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Carpenter"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Inception -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Inception">
+        <rdf:type rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Thriller"/>
+        <directed_by rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Nolan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Nolan -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Nolan">
+        <rdf:type rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Director"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Tom_Cruise -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Tom_Cruise">
+        <rdf:type rdf:resource="file:/C:/Users/Alessandro/Dropbox/Esami/Actor"/>
+        <has_partecipated_in rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Halloween"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

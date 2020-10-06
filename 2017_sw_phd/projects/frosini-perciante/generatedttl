@@ -1,0 +1,325 @@
+@prefix d4s: <http://www.d4science.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+_:genid792246466 a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.d4science.org/belongs_to
+
+d4s:belongs_to a owl:ObjectProperty ;
+	rdfs:domain d4s:HostingNode ;
+	rdfs:range d4s:DataCenter .
+# 
+# http://www.d4science.org/contains
+
+d4s:contains a owl:ObjectProperty ;
+	rdfs:domain d4s:HostingNode ;
+	rdfs:range d4s:DataCenter .
+# 
+# http://www.d4science.org/has_maintainer
+
+d4s:has_maintainer a owl:ObjectProperty ;
+	rdfs:domain d4s:DataCenter ;
+	rdfs:range d4s:Maintainer .
+# 
+# http://www.d4science.org/hosts
+
+d4s:hosts a owl:ObjectProperty ;
+	rdfs:domain d4s:HostingNode ;
+	rdfs:range d4s:EService .
+# 
+# http://www.d4science.org/is_located_in
+
+d4s:is_located_in a owl:ObjectProperty ;
+	rdfs:domain d4s:DataCenter ;
+	rdfs:range d4s:City .
+# 
+# http://www.d4science.org/is_operated_by
+
+d4s:is_operated_by a owl:ObjectProperty ;
+	rdfs:domain d4s:DataCenter ;
+	rdfs:range d4s:OwnerOrganization .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.d4science.org/has_email_address
+
+d4s:has_email_address a owl:DatatypeProperty ;
+	rdfs:domain d4s:Maintainer ;
+	rdfs:range rdfs:Literal .
+# 
+# http://www.d4science.org/has_hostname
+
+d4s:has_hostname a owl:DatatypeProperty ;
+	rdfs:domain d4s:HostingNode ;
+	rdfs:range rdfs:Literal .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E21_Person
+
+cidoc:E21_Person a owl:Class .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E27_Site
+
+cidoc:E27_Site a owl:Class .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E40_LegalBody
+
+cidoc:E40_LegalBody a owl:Class .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E53_Place
+
+cidoc:E53_Place a owl:Class .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E7_Activity
+
+cidoc:E7_Activity a owl:Class .
+# 
+# http://www.d4science.org/City
+
+d4s:City a owl:Class ;
+	rdfs:subClassOf cidoc:E53_Place .
+# 
+# http://www.d4science.org/DataCenter
+
+d4s:DataCenter a owl:Class ;
+	rdfs:subClassOf cidoc:E27_Site .
+# 
+# http://www.d4science.org/EService
+
+d4s:EService a owl:Class ;
+	rdfs:subClassOf d4s:Service .
+# 
+# http://www.d4science.org/HostingNode
+
+d4s:HostingNode a owl:Class ;
+	rdfs:subClassOf d4s:Service .
+# 
+# http://www.d4science.org/Maintainer
+
+d4s:Maintainer a owl:Class ;
+	rdfs:subClassOf cidoc:E21_Person .
+# 
+# http://www.d4science.org/OwnerOrganization
+
+d4s:OwnerOrganization a owl:Class ;
+	rdfs:subClassOf cidoc:E40_LegalBody .
+# 
+# http://www.d4science.org/Service
+
+d4s:Service a owl:Class ;
+	rdfs:subClassOf cidoc:E7_Activity .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/Ginevra
+
+dbpedia:Ginevra a owl:NamedIndividual ;
+	owl:sameAs d4s:Ginevra .
+# 
+# http://dbpedia.org/resource/Pisa
+
+dbpedia:Pisa a owl:NamedIndividual ;
+	owl:sameAs d4s:Pisa .
+# 
+# http://dbpedia.org/resource/Roma
+
+dbpedia:Roma a owl:NamedIndividual ;
+	owl:sameAs d4s:Roma .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#AndreaManzi
+
+<http://www.co-ode.org/ontologies/ont.owl#AndreaManzi> a owl:NamedIndividual ;
+	d4s:has_email_address "andrea.manzi@cern.ch" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#CERN
+
+<http://www.co-ode.org/ontologies/ont.owl#CERN> a owl:NamedIndividual , d4s:OwnerOrganization .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#CiroFormisano
+
+<http://www.co-ode.org/ontologies/ont.owl#CiroFormisano> a owl:NamedIndividual , d4s:Maintainer ;
+	d4s:has_email_address "ciro.formisano@eng.it" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#DataCenter01
+
+<http://www.co-ode.org/ontologies/ont.owl#DataCenter01> a owl:NamedIndividual , d4s:DataCenter ;
+	d4s:has_maintainer <http://www.co-ode.org/ontologies/ont.owl#TommasoPiccioli> ;
+	d4s:is_located_in d4s:Pisa ;
+	d4s:is_operated_by <http://www.co-ode.org/ontologies/ont.owl#ISTI-CNR> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#DataCenter02
+
+<http://www.co-ode.org/ontologies/ont.owl#DataCenter02> a owl:NamedIndividual , d4s:DataCenter ;
+	d4s:has_maintainer <http://www.co-ode.org/ontologies/ont.owl#AndreaDell'Amico> ;
+	d4s:is_located_in d4s:Pisa ;
+	d4s:is_operated_by <http://www.co-ode.org/ontologies/ont.owl#ISTI-CNR> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#DataCenter03
+
+<http://www.co-ode.org/ontologies/ont.owl#DataCenter03> a owl:NamedIndividual , d4s:DataCenter ;
+	d4s:has_maintainer <http://www.co-ode.org/ontologies/ont.owl#AndreaManzi> ;
+	d4s:is_located_in d4s:Ginevra ;
+	d4s:is_operated_by <http://www.co-ode.org/ontologies/ont.owl#CERN> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#DataCenter04
+
+<http://www.co-ode.org/ontologies/ont.owl#DataCenter04> a owl:NamedIndividual , d4s:DataCenter ;
+	d4s:has_maintainer <http://www.co-ode.org/ontologies/ont.owl#CiroFormisano> ;
+	d4s:is_located_in d4s:Roma ;
+	d4s:is_operated_by <http://www.co-ode.org/ontologies/ont.owl#ENG> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#DataMiner
+
+<http://www.co-ode.org/ontologies/ont.owl#DataMiner> a owl:NamedIndividual , d4s:EService .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#ENG
+
+<http://www.co-ode.org/ontologies/ont.owl#ENG> a owl:NamedIndividual , d4s:OwnerOrganization .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#ISTI-CNR
+
+<http://www.co-ode.org/ontologies/ont.owl#ISTI-CNR> a owl:NamedIndividual , d4s:OwnerOrganization .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node01
+
+<http://www.co-ode.org/ontologies/ont.owl#Node01> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter01> ;
+	d4s:hosts <http://www.co-ode.org/ontologies/ont.owl#SmartExecutor> ;
+	d4s:has_hostname "node01.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node02
+
+<http://www.co-ode.org/ontologies/ont.owl#Node02> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter02> ;
+	d4s:hosts <http://www.co-ode.org/ontologies/ont.owl#SmartExecutor> ;
+	d4s:has_hostname "node02.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node03
+
+<http://www.co-ode.org/ontologies/ont.owl#Node03> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter03> ;
+	d4s:hosts <http://www.co-ode.org/ontologies/ont.owl#DataMiner> ;
+	d4s:has_hostname "node03.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node04
+
+<http://www.co-ode.org/ontologies/ont.owl#Node04> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter04> ;
+	d4s:hosts <http://www.co-ode.org/ontologies/ont.owl#SocialDataIndexer> ;
+	d4s:has_hostname "node04.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node05
+
+<http://www.co-ode.org/ontologies/ont.owl#Node05> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter01> ;
+	d4s:has_hostname "node05.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node06
+
+<http://www.co-ode.org/ontologies/ont.owl#Node06> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter02> ;
+	d4s:hosts <http://www.co-ode.org/ontologies/ont.owl#SmartExecutor> ;
+	d4s:has_hostname "node06.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node07
+
+<http://www.co-ode.org/ontologies/ont.owl#Node07> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter03> ;
+	d4s:hosts <http://www.co-ode.org/ontologies/ont.owl#SmartExecutor> ;
+	d4s:has_hostname "node07.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node08
+
+<http://www.co-ode.org/ontologies/ont.owl#Node08> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter04> ;
+	d4s:hosts <http://www.co-ode.org/ontologies/ont.owl#VREModeler> ;
+	d4s:has_hostname "node08.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node09
+
+<http://www.co-ode.org/ontologies/ont.owl#Node09> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter01> ;
+	d4s:has_hostname "node09.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Node10
+
+<http://www.co-ode.org/ontologies/ont.owl#Node10> a owl:NamedIndividual , d4s:HostingNode ;
+	d4s:belongs_to <http://www.co-ode.org/ontologies/ont.owl#DataCenter02> ;
+	d4s:hosts <http://www.co-ode.org/ontologies/ont.owl#Portal> ;
+	d4s:has_hostname "node10.d4science.org" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#Portal
+
+<http://www.co-ode.org/ontologies/ont.owl#Portal> a owl:NamedIndividual , d4s:EService .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#SmartExecutor
+
+<http://www.co-ode.org/ontologies/ont.owl#SmartExecutor> a owl:NamedIndividual , d4s:EService .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#SocialDataIndexer
+
+<http://www.co-ode.org/ontologies/ont.owl#SocialDataIndexer> a owl:NamedIndividual , d4s:EService .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#TommasoPiccioli
+
+<http://www.co-ode.org/ontologies/ont.owl#TommasoPiccioli> a owl:NamedIndividual ;
+	d4s:has_email_address "tommaso.piccioli@isti.cnr.it" .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#VREModeler
+
+<http://www.co-ode.org/ontologies/ont.owl#VREModeler> a owl:NamedIndividual , d4s:EService .
+# 
+# http://www.co-ode.org/ontologies/ont.owl#AndreaDell'Amico
+
+<http://www.co-ode.org/ontologies/ont.owl#AndreaDell'Amico> a owl:NamedIndividual , d4s:Maintainer ;
+	d4s:has_email_address "andea.dellamico@isti.cnr.it" .
+# 
+# http://www.d4science.org/Ginevra
+
+d4s:Ginevra a owl:NamedIndividual , d4s:City .
+# 
+# http://www.d4science.org/Pisa
+
+d4s:Pisa a owl:NamedIndividual , d4s:City .
+# 
+# http://www.d4science.org/Roma
+
+d4s:Roma a owl:NamedIndividual , d4s:City .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

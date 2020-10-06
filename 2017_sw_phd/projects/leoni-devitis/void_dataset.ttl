@@ -1,0 +1,39 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms:  <https://prefix.cc/dcterms> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <#> .
+
+:MovieDataset a void:Dataset
+	dcterms:licese PDDL
+	dcterms:subject <http://dbpedia.org/resource/movie>
+	dcterms:title "MovieDataset";
+	dcterms:description "My movie dataset";
+	dcterms:contributor : Alessandro_Leoni;
+	dcterms:contributor : Gabriele_De_Vitis;
+	dcterms:contributor : Università_di_Pisa;
+	dcterms:source	<http://dbpedia.org/resource/Wikipedia>;
+	dcterms:modified "2017-02-08"^^xsd:date;
+	.
+	
+	:Università_di_Pisa a foaf:Organization;
+	rdfs:label "Università di Pisa";
+	foaf:homepage <https://www.unipi.it/>;
+	.
+	
+	:Alessandro_Leoni a foaf:Person;
+	foaf:firstName "Alessandro";
+	foaf:familyName "Leoni";
+	.
+	
+	:Gabriele_De_Vitis:Person;
+	foaf:firstName "Gabriele";
+	foaf:familyName "De Vitis";
+	
+
+:MovieDataset_link_DBpedia a void:Linkset ;
+	void:target :MovieDataset ;
+    void:target <http://dbpedia.org/>;
+    void:subset <http://dbpedia.org/>;
+	void:linkPredicate owl:sameAs.

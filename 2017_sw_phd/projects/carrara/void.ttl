@@ -1,0 +1,38 @@
+@prefix ex: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix : <#> .
+
+:FontanelliProducts a void:Dataset;
+    dcterms:title "ProfumeriaFontanelli";
+    dcterms:description "A set of products offered by Profumeria Fontanelli";
+    foaf:homepage <http://profumeria.fontanellistore.com>;
+    void:exampleResource ex:Oscar_de_la_Renta_Pour_Lui_Eau_De_Toilette_60_ml;
+    dcterms:creator :Fabio_Carrara;
+    dcterms:contributor <http://localhost:8080/profumeria/ProfumeriaFontanelli>;
+    dcterms:created "2017-02-21"^^xsd:date;
+    dcterms:license <http://www.gnu.org/copyleft/fdl.html>;
+    void:sparqlEndpoint ex:sparql;
+    void:dataDump ex:dump;
+    void:vocabulary <http://xmlns.com/foaf/0.1/>;
+    void:vocabulary <http://purl.org/goodrelations/v1#>;
+    void:vocabulary <http://it.dbpedia.org/resource/>;    
+.
+
+:Fabio_Carrara a foaf:Person;
+    rdfs:label "Fabio Carrara";
+    rdfs:comment "PhD Student";
+    rdfs:seeAlso <https://scholar.google.com/citations?user=SZR6mXsAAAAJ&hl=en>;
+.
+
+<http://localhost:8080/profumeria/ProfumeriaFontanelli> a gr:BusinessEntity ;
+	gr:LegalName "Profumeria Fontanelli s.r.l" ;
+	foaf:page "http://profumeria.fontanellistore.com/" ;
+	foaf:phone "+39 0571 74361" ;
+.

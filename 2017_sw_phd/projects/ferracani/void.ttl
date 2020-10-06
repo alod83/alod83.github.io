@@ -1,0 +1,57 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix sr: <http://www.senzariserva.it/aste/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms:  <https://prefix.cc/dcterms> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <#> .
+
+sr:SenzaRiserva a void:Dataset;
+	foaf:homepage <http://www.senzariserva.it> ;
+	dcterms:title "SenzaRiserva";
+	dcterms:description "Turtle triples data extracted from SenzaRiserva";
+	dcterms:contributor  "Andrea Ferracani";
+    dcterms:source <http://www.senzariserva.it>;
+	dcterms:modified "2017-02-08"^^xsd:date;
+	dcterms:subject <http://dbpedia.org/page/Art>;
+	dcterms:licence <http://www.opendatacommons.org/licenses/pddl/>;
+	void:dataDump <http://www.senzariserva.it/data.rdf> .
+
+:DBpedia a void:Dataset;
+	foaf:homepage <http://dbpedia.org/>;
+    void:triples 1000000000; 
+    void:entities 3400000;
+	dcterms:title "DBPedia";
+    dcterms:description "RDF data extracted from Wikipedia";
+    dcterms:contributor :DBpedia_community;
+    dcterms:source <http://dbpedia.org/resource/Wikipedia>;
+    dcterms:modified "2017-02-22"^^xsd:date .
+
+:Wikidata a void:Dataset;
+	foaf:homepage <http://www.wikidata.org//>;
+    void:triples 250000000; 
+    void:entities 125000000;
+	dcterms:title "Wikidata";
+    dcterms:description "RDF data extracted from Wikidata";
+    dcterms:modified "2017-02-22"^^xsd:date .
+
+:SenzaRiserva_DBpedia rdf:type void:Linkset ;
+     void:target sr:SenzaRiserva;
+     void:target :DBpedia;
+     void:subset :DBpedia;
+	 void:triples 5;
+     void:linkPredicate owl:sameAs .
+
+:SenzaRiserva_Wikidata rdf:type void:Linkset ;
+ 	 void:target sr:SenzaRiserva;
+     void:target :Wikidata;
+     void:subset :Wikidata;
+	 void:triples 2;
+     void:linkPredicate owl:sameAs .
+
+
+
+    
+

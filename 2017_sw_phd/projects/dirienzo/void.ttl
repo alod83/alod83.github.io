@@ -1,0 +1,50 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix sr: <http://localhost:8080/mydataset/>  .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms:  <https://prefix.cc/dcterms> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <#> .
+
+sr:mydataset a void:Dataset;
+	foaf:homepage <http://localhost:8080/mydataset/> ;
+	dcterms:title "Italian singer";
+	dcterms:description "mydata";
+	dcterms:contributor  "Roberto Di Rienzo";
+	dcterms:modified "2017-04-27"^^xsd:date;
+	dcterms:source <http://dbpedia.org/resource/Wikipedia>;
+
+
+:DBpedia a void:Dataset;
+	foaf:homepage <http://dbpedia.org/>;
+    void:triples 1000000000; 
+    void:entities 3400000;
+	dcterms:title "DBPedia";
+    dcterms:description "RDF data extracted from Wikipedia";
+    dcterms:contributor :DBpedia_community;
+    dcterms:source <http://dbpedia.org/resource/Wikipedia>;
+    dcterms:modified "2017-04-27"^^xsd:date .
+
+:Wikidata a void:Dataset;
+	foaf:homepage <http://www.wikidata.org//>;
+    void:triples 250000000; 
+    void:entities 125000000;
+	dcterms:title "Wikidata";
+    dcterms:description "RDF data extracted from Wikidata";
+    dcterms:modified "2017-04-27"^^xsd:date .
+
+:mydataset_DBpedia rdf:type void:Linkset ;
+     void:target sr:mydataset;
+     void:target :DBpedia;
+     void:subset :DBpedia;
+	 void:triples 10;
+     void:linkPredicate owl:sameAs .
+
+:mydataset_Wikidata rdf:type void:Linkset ;
+ 	 void:target sr:mydataset;
+     void:target :Wikidata;
+     void:subset :Wikidata;
+	 void:triples 5;
+     void:linkPredicate owl:sameAs .

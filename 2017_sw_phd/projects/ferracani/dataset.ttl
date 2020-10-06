@@ -1,0 +1,67 @@
+@prefix sr: <http://www.senzariserva.it/aste/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix dcterms:  <https://prefix.cc/dcterms> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+	 
+
+sr:Asta rdf:type rdfs:Class .
+sr:Artwork rdf:type rdfs:Class .
+sr:Author rdf:type rdfs:Class .
+
+sr:contains rdf:type rdfs:Property .
+sr:hasAuthor rdf:type rdfs:Property .
+
+sr:contains rdfs:domain sr:Asta; rdfs:range sr:Artwork .
+sr:hasAuthor rdfs:domain sr:Artwork; rdfs:range sr:Author .
+
+sr:Venturino_Venturi rdf:type sr:Author;
+	owl:sameAs wikidata:Q2513051 .
+sr:Vettor_Pisani rdf:type sr:Author .
+sr:Mario_Nigro rdf:type sr:Author;
+	owl:sameAs dbpedia:Mario_Nigro .
+sr:Pino_Pinelli rdf:type sr:Author .
+sr:Tano_Festa rdf:type sr:Author ;
+	owl:sameAs wikidata:Q3980896 .
+sr:Franco_Costalonga rdf:type sr:Author .
+sr:Luigi_Ontani rdf:type sr:Author;
+	owl:sameAs dbpedia:Luigi_Ontani .
+sr:Getulio_Alviani rdf:type sr:Author;
+	owl:sameAs dbpedia:Getulio_Alviani .
+sr:Michelangelo_Pistoletto rdf:type sr:Author;
+	owl:sameAs dbpedia:Michelangelo_Pistoletto .
+sr:Carla_Accardi rdf:type sr:Author;
+	owl:sameAs dbpedia:Carla_Accardi .
+
+sr:pananti-asta-121-iii-arte-moderna-contemporanea sr:contains 
+[rdf:type edm:ProvidedCHO;  dc:creator: "Venturino Venturi"; dc:title "Maternità"; dcterms:medium: "bassorilievo su pietra"; dcterms:extent "92x31x5"; dcterms:created "1954"^^xsd:integer; edm:hasType "pittura"; sr:hasAuthor sr:Venturino_Venturi], 
+
+[rdf:type edm:ProvidedCHO;  dc:creator: "Vettor Pisani"; dc:title "Senza titolo"; dcterms:medium: "dipinto a olio su pvc"; dcterms:created "2001"^^xsd:integer; dcterms:extent "63x120"; edm:hasType "pittura"; sr:hasAuthor sr:Vettor_Pisani],
+
+[rdf:type edm:ProvidedCHO;  dc:creator: "Mario Nigro"; dc:title "Senza titolo"; dcterms:medium: "99.5×70.5"; dcterms:created "1950"^^xsd:integer; dcterms:extent "99.5×70.5"; edm:hasType "pittura"; sr:hasAuthor sr:Mario_Nigro],
+
+[rdf:type edm:ProvidedCHO;  dc:creator: "Pino Pinelli"; dc:title "Pittura R"; dcterms:medium: "tecnica mista su due elementi"; dcterms:created "1999"^^xsd:integer; dcterms:extent "29×22.5"; edm:hasType "pittura"; sr:hasAuthor sr:Pino_Pinelli],
+
+[rdf:type edm:ProvidedCHO;  dc:creator: "Tano Festa"; dc:title "Da Michelangelo"; dcterms:medium: "acrilico su tela"; dcterms:created "1978"^^xsd:integer; dcterms:extent "80x60"; edm:hasType "pittura"; sr:hasAuthor sr:Tano_Festa],
+
+[rdf:type edm:ProvidedCHO;  dc:creator: "Franco Costalonga"; dc:title "Mocubi"; dcterms:medium: "smalti e assemblaggio polimaterico su masonite"; dcterms:created "1994"^^xsd:integer; dcterms:extent "70x70"; edm:hasType "pittura"; sr:hasAuthor sr:Franco_Costalonga],
+
+[rdf:type edm:ProvidedCHO;  dc:creator: "Luigi Ontani"; dc:title "Moro Amaro D’Amore"; dcterms:medium: "china e acquerello su carta"; dcterms:created "1998"^^xsd:integer; dcterms:extent "48x36"; edm:hasType "pittura"; sr:hasAuthor sr:Luigi_Ontani],
+
+[rdf:type edm:ProvidedCHO;  dc:creator: "Getulio Alviani"; dc:title "Superficie tornita 2 1/4 di quadrato"; dcterms:medium: "alluminio"; dcterms:created "1965"^^xsd:integer; dcterms:extent "30x30"; edm:hasType "pittura"; sr:hasAuthor sr:Getulio_Alviani],
+
+[rdf:type edm:ProvidedCHO;  dc:creator: "Michelangelo Pistoletto"; dc:title "Donna che cuce"; dcterms:medium: "serigrafia su acciaio inox lucidato a specchio"; dcterms:created "1981"^^xsd:integer; dcterms:extent "120x100"; edm:hasType "pittura"; sr:hasAuthor sr:Michelangelo_Pistoletto],
+
+[rdf:type edm:ProvidedCHO;  dc:creator: "Carla Accardi"; dc:title "Piccolo negativo"; dcterms:medium: "tempera alla caseina su tela"; dcterms:created "1955"^^xsd:integer; dcterms:extent "33x40"; edm:hasType "pittura"; sr:hasAuthor sr:Carla_Accardi];
+
+rdf:type sr:Asta .
+
+
+
+

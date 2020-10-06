@@ -1,0 +1,32 @@
+# Prefix declarations to be used in RDF output
+@prefix conf: <http://richard.cyganiak.de/2007/pubby/config.rdf#> .
+@prefix meta: <http://example.org/metadata#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prv:      <http://purl.org/net/provenance/ns#> .
+@prefix prvTypes: <http://purl.org/net/provenance/types#> .
+ 
+# Server configuration section
+<> a conf:Configuration;
+ 
+    # Project name for display in page titles
+    conf:projectName "Pubby Test";
+ 
+    # Homepage with description of the project for the link in the page header
+    conf:projectHomepage <www-sop.inria.fr/members/Hasan.Rakebul/>;
+ 
+    # The Pubby root, where the webapp is running inside the servlet container.
+    conf:webBase <http://localhost:8080/mydataset/>;
+ 
+    # Dataset configuration section
+    conf:dataset [
+        # SPARQL endpoint URL of the dataset
+        conf:sparqlEndpoint <http://localhost:3030/mydataset/query>;
+ 
+        # Common URI prefix of all resource URIs in the SPARQL dataset
+        conf:datasetBase <http://localhost:8080/mydataset/>;
+        #The unmatched part between conf:webBase and the request url will be appended with conf:datasetBase
+    ];
+    .
